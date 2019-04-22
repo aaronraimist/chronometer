@@ -301,7 +301,7 @@ def ntp_daemon():
         time.sleep(15)
 if __name__ == "__main__":
     t = threading.Thread(target=ntp_daemon)
-    t.set_daemon(True)
+    t.setDaemon(True)
     t.start()
     main()
     os.system("clear")
